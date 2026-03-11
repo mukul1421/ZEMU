@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Zemu AI Chat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Inter;
+background:#0B1C2C;
+color:white;
+display:flex;
+height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:260px;
+background:#07131f;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:14px;
+border-right:1px solid rgba(255,255,255,.05);
+}
+
+.sidebar img{
+width:130px;
+margin-bottom:20px;
+}
+
+.side-btn{
+background:#132739;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+transition:.2s;
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+}
+
+.side-btn:hover{
+background:#1e3b54;
+}
+
+select{
+background:#132739;
+color:white;
+border:none;
+padding:10px;
+border-radius:10px;
+}
+
+/* CHAT AREA */
+
+.chat-area{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+/* HEADER */
+
+.chat-header{
+padding:18px;
+background:#07131f;
+display:flex;
+align-items:center;
+gap:10px;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.chat-header img{
+height:34px;
+}
+
+/* CHAT BOX */
+
+.chat-box{
+flex:1;
+padding:30px;
+overflow-y:auto;
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+/* MESSAGES */
+
+.message{
+max-width:60%;
+padding:12px 16px;
+border-radius:14px;
+line-height:1.5;
+}
+
+.user{
+background:#0BA5A4;
+align-self:flex-end;
+}
+
+.bot{
+background:#162a3b;
+}
+
+/* THINKING INDICATOR */
+
+.typing{
+display:none;
+align-items:center;
+gap:6px;
+color:#9fb5c6;
+font-size:14px;
+}
+
+.typing span{
+width:6px;
+height:6px;
+background:#0BA5A4;
+border-radius:50%;
+animation:blink 1.4s infinite;
+}
+
+.typing span:nth-child(2){animation-delay:.2s;}
+.typing span:nth-child(3){animation-delay:.4s;}
+
+@keyframes blink{
+0%,80%,100%{opacity:0}
+40%{opacity:1}
+}
+
+/* INPUT AREA */
+
+.input-area{
+padding:20px;
+background:#07131f;
+display:flex;
+gap:10px;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+input{
+flex:1;
+padding:12px;
+border-radius:20px;
+border:none;
+background:#162a3b;
+color:white;
+outline:none;
+}
+
+button{
+padding:10px 18px;
+border-radius:10px;
+border:none;
+background:#0BA5A4;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#0d8f8e;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<img src="/static/images/logo.png">
+
+<div class="side-btn" onclick="newChat()">➕ New Chat</div>
+
+<div class="side-btn" onclick="startVoice()">🎤 Voice Input</div>
+
+<div class="side-btn" onclick="stopVoice()">⏹ Stop Voice</div>
+
+<div class="side-btn" onclick="clearChat()">🗑 Clear Chat</div>
+
+<label>🌐 Language</label>
+
+<select id="lang">
+<option value="en">English</option>
+<option value="hi">Hindi</option>
+<option value="ne">Nepali</option>
+<option value="bn">Bengali</option>
+</select>
+
+</div>
+
+
+<!-- CHAT AREA -->
+
+<div class="chat-area">
+
+<div class="chat-header">
+
+<img src="/static/images/logo.png">
+<h3>Zemu AI Assistant</h3>
+
+</div>
+
+<div class="chat-box" id="chat-box">
+
+<div id="typing" class="typing">
+<span></span>
+<span></span>
+<span></span>
+Zemu is thinking...
+</div>
+
+</div>
+
+<div class="input-area">
+
+<input id="user-input" placeholder="Ask about Sikkim...">
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+let currentSpeech=null
+
+const input=document.getElementById("user-input")
+const chatBox=document.getElementById("chat-box")
+const typing=document.getElementById("typing")
+const langSelect=document.getElementById("lang")
+
+/* ENTER KEY */
+
+input.addEventListener("keypress",function(e){
+if(e.key==="Enter"){
+sendMessage()
+}
+})
+
+/* NEW CHAT */
+
+function newChat(){
+chatBox.innerHTML=""
+chatBox.appendChild(typing)
+}
+
+/* CLEAR CHAT */
+
+function clearChat(){
+chatBox.innerHTML=""
+chatBox.appendChild(typing)
+}
+
+/* SEND MESSAGE */
+
+async function sendMessage(){
+
+let message=input.value.trim()
+let lang=langSelect.value
+
+if(!message)return
+
+const userDiv=document.createElement("div")
+userDiv.className="message user"
+userDiv.textContent=message
+
+chatBox.appendChild(userDiv)
+
+input.value=""
+
+typing.style.display="flex"
+chatBox.appendChild(typing)
+
+chatBox.scrollTop=chatBox.scrollHeight
+
+try{
+
+let res=await fetch("/api/chat",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({text:message,lang:lang})
+})
+
+let data=await res.json()
+
+typing.style.display="none"
+
+const botDiv=document.createElement("div")
+botDiv.className="message bot"
+botDiv.textContent=data.response
+
+chatBox.appendChild(botDiv)
+
+chatBox.scrollTop=chatBox.scrollHeight
+
+speak(data.response,lang)
+
+}catch(err){
+
+typing.style.display="none"
+
+const errorDiv=document.createElement("div")
+errorDiv.className="message bot"
+errorDiv.textContent="Server error. Please try again."
+
+chatBox.appendChild(errorDiv)
+
+}
+
+}
+
+/* TEXT TO SPEECH */
+
+function speak(text,lang){
+
+const map={
+en:"en-US",
+hi:"hi-IN",
+ne:"ne-NP",
+bn:"bn-IN"
+}
+
+if(currentSpeech) speechSynthesis.cancel()
+
+currentSpeech=new SpeechSynthesisUtterance(text)
+
+currentSpeech.lang=map[lang]||"en-US"
+
+speechSynthesis.speak(currentSpeech)
+
+}
+
+/* VOICE INPUT */
+
+function startVoice(){
+
+const map={
+en:"en-US",
+hi:"hi-IN",
+ne:"ne-NP",
+bn:"bn-IN"
+}
+
+let lang=langSelect.value
+
+let SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition
+
+if(!SpeechRecognition){
+alert("Voice input not supported in this browser")
+return
+}
+
+let recog=new SpeechRecognition()
+
+recog.lang=map[lang]
+
+recog.start()
+
+recog.onresult=function(e){
+
+input.value=e.results[0][0].transcript
+
+sendMessage()
+
+}
+
+}
+
+/* STOP SPEECH */
+
+function stopVoice(){
+speechSynthesis.cancel()
+}
+
+</script>
+
+</body>
+
+</html>

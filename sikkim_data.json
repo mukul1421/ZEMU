@@ -1,0 +1,502 @@
+[
+  {
+    "id": "1",
+    "title": "Tsomgo Lake",
+    "text": "A glacial lake located 40 km from Gangtok, famous for scenic beauty and yak rides.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.3,
+      "lon": 88.6
+    }
+  },
+  {
+    "id": "2",
+    "title": "Rumtek Monastery",
+    "text": "One of the largest Buddhist monasteries in Sikkim, serving as the seat of the Karmapa.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.32,
+      "lon": 88.61
+    }
+  },
+  {
+    "id": "3",
+    "title": "Yumthang Valley",
+    "text": "Known as the Valley of Flowers, famous for rhododendrons and natural beauty.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.63,
+      "lon": 88.65
+    }
+  },
+  {
+    "id": "4",
+    "title": "Tashi View Point",
+    "text": "Offers panoramic views of Mount Kanchenjunga and surrounding landscapes.",
+    "category": "viewpoint",
+    "coordinates": {
+      "lat": 27.35,
+      "lon": 88.61
+    }
+  },
+  {
+    "id": "5",
+    "title": "Gangtok Ropeway",
+    "text": "A scenic cable car ride offering stunning views of Gangtok city and hills.",
+    "category": "adventure",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.61
+    }
+  },
+  {
+    "id": "6",
+    "title": "Namgyal Institute of Tibetology",
+    "text": "A research institute and museum dedicated to Tibetan culture and history.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.62
+    }
+  },
+  {
+    "id": "7",
+    "title": "Phodong Monastery",
+    "text": "A historic Buddhist monastery known for its religious festivals and architecture.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.44,
+      "lon": 88.58
+    }
+  },
+  {
+    "id": "8",
+    "title": "Ravangla Buddha Park",
+    "text": "A serene park with a 130-foot Buddha statue and beautiful surrounding gardens.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.18,
+      "lon": 88.47
+    }
+  },
+  {
+    "id": "9",
+    "title": "Bara Pathar",
+    "text": "A viewpoint near Gangtok offering panoramic views of valleys and mountains.",
+    "category": "viewpoint",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.61
+    }
+  },
+  {
+    "id": "10",
+    "title": "Seven Sisters Waterfalls",
+    "text": "A group of cascading waterfalls near Pelling, surrounded by lush greenery.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.29,
+      "lon": 88.12
+    }
+  },
+  {
+    "id": "11",
+    "title": "Khecheopalri Lake",
+    "text": "A sacred lake near Pelling believed to grant wishes and surrounded by dense forest.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.31,
+      "lon": 88.12
+    }
+  },
+  {
+    "id": "12",
+    "title": "Pemayangtse Monastery",
+    "text": "One of the oldest monasteries in Sikkim, known for its murals and religious significance.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.29,
+      "lon": 88.11
+    }
+  },
+  {
+    "id": "13",
+    "title": "Zuluk",
+    "text": "A small village on the old Silk Route, famous for scenic winding roads and sunrise views.",
+    "category": "viewpoint",
+    "coordinates": {
+      "lat": 27.18,
+      "lon": 88.82
+    }
+  },
+  {
+    "id": "14",
+    "title": "Old Silk Route",
+    "text": "Historic trade route offering panoramic Himalayan views and trekking experiences.",
+    "category": "adventure",
+    "coordinates": {
+      "lat": 27.17,
+      "lon": 88.8
+    }
+  },
+  {
+    "id": "15",
+    "title": "Nathula Pass",
+    "text": "A mountain pass on the India-China border, part of the historic Silk Route.",
+    "category": "adventure",
+    "coordinates": {
+      "lat": 27.43,
+      "lon": 88.97
+    }
+  },
+  {
+    "id": "16",
+    "title": "Lingdum Monastery",
+    "text": "Also called Ranka Monastery, known for its peaceful environment and annual festivals.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.27,
+      "lon": 88.56
+    }
+  },
+  {
+    "id": "17",
+    "title": "Hanuman Tok",
+    "text": "A small temple dedicated to Hanuman with panoramic views of Gangtok.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.63
+    }
+  },
+  {
+    "id": "18",
+    "title": "MG Marg Gangtok",
+    "text": "The main shopping street in Gangtok, popular for restaurants, shops, and cafes.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.61
+    }
+  },
+  {
+    "id": "19",
+    "title": "Ranka Monastery",
+    "text": "Known for its serene surroundings and spiritual significance, also called Lingdum Monastery.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.27,
+      "lon": 88.56
+    }
+  },
+  {
+    "id": "20",
+    "title": "Banjhakri Falls",
+    "text": "A waterfall surrounded by a park that showcases Sikkimese folklore and culture.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.31,
+      "lon": 88.61
+    }
+  },
+  {
+    "id": "21",
+    "title": "Ganesh Tok",
+    "text": "A temple dedicated to Lord Ganesha, offering views of Gangtok city.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.34,
+      "lon": 88.63
+    }
+  },
+  {
+    "id": "22",
+    "title": "Himalayan Zoological Park",
+    "text": "A conservation park in Gangtok featuring Himalayan species like red pandas.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.6
+    }
+  },
+  {
+    "id": "23",
+    "title": "Tashiding Monastery",
+    "text": "An important Buddhist monastery in West Sikkim, known for rituals and festivals.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.32,
+      "lon": 88.39
+    }
+  },
+  {
+    "id": "24",
+    "title": "Pemayangtse Gardens",
+    "text": "Beautiful gardens near Pemayangtse Monastery with mountain views.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.29,
+      "lon": 88.11
+    }
+  },
+  {
+    "id": "25",
+    "title": "Ralong Monastery",
+    "text": "A monastery in South Sikkim with traditional architecture and local festivals.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.15,
+      "lon": 88.46
+    }
+  },
+  {
+    "id": "26",
+    "title": "Sanga Choeling Monastery",
+    "text": "One of the oldest monasteries in Sikkim, located near Pelling, accessible via steep climb.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.12
+    }
+  },
+  {
+    "id": "27",
+    "title": "Barsey Rhododendron Sanctuary",
+    "text": "Famous for rhododendron blooms in spring, trekking and wildlife spotting.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.08,
+      "lon": 88.39
+    }
+  },
+  {
+    "id": "28",
+    "title": "Samdruptse Hill",
+    "text": "A hill with a 118-foot statue of Guru Padmasambhava near Namchi.",
+    "category": "viewpoint",
+    "coordinates": {
+      "lat": 27.13,
+      "lon": 88.36
+    }
+  },
+  {
+    "id": "29",
+    "title": "Namchi Char Dham",
+    "text": "Religious complex in Namchi with replicas of four Dhams and cultural displays.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.11,
+      "lon": 88.36
+    }
+  },
+  {
+    "id": "30",
+    "title": "Kunzum Pass",
+    "text": "Mountain pass famous for adventure trips and Himalayan views.",
+    "category": "adventure",
+    "coordinates": {
+      "lat": 27.14,
+      "lon": 88.35
+    }
+  },
+  {
+    "id": "31",
+    "title": "Singshore Bridge",
+    "text": "One of the highest suspension bridges in Sikkim, located near Pelling.",
+    "category": "adventure",
+    "coordinates": {
+      "lat": 27.27,
+      "lon": 88.12
+    }
+  },
+  {
+    "id": "32",
+    "title": "Rimbi Waterfalls",
+    "text": "A scenic waterfall in West Sikkim, surrounded by forests.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.31,
+      "lon": 88.1
+    }
+  },
+  {
+    "id": "33",
+    "title": "Khecheopalri Sacred Forest",
+    "text": "A holy forest near Khecheopalri Lake, protected for its sacred significance.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.31,
+      "lon": 88.12
+    }
+  },
+  {
+    "id": "34",
+    "title": "Lachung",
+    "text": "A picturesque village in North Sikkim, base for Yumthang Valley and trekking.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.63,
+      "lon": 88.65
+    }
+  },
+  {
+    "id": "35",
+    "title": "Lachen",
+    "text": "Village in North Sikkim, gateway to Gurudongmar Lake.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.62,
+      "lon": 88.64
+    }
+  },
+  {
+    "id": "36",
+    "title": "Gurudongmar Lake",
+    "text": "One of the highest lakes in the world, located in North Sikkim, sacred and scenic.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 28.0,
+      "lon": 88.66
+    }
+  },
+  {
+    "id": "37",
+    "title": "Changey Waterfalls",
+    "text": "Beautiful waterfall en route to Gurudongmar Lake, surrounded by Himalayan forest.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.9,
+      "lon": 88.65
+    }
+  },
+  {
+    "id": "38",
+    "title": "Phensang Monastery",
+    "text": "Buddhist monastery in East Sikkim with cultural and religious significance.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.3,
+      "lon": 88.62
+    }
+  },
+  {
+    "id": "39",
+    "title": "Ravangla View Point",
+    "text": "Scenic viewpoint near Ravangla offering views of mountains and valleys.",
+    "category": "viewpoint",
+    "coordinates": {
+      "lat": 27.18,
+      "lon": 88.47
+    }
+  },
+  {
+    "id": "40",
+    "title": "Singtam",
+    "text": "Small town in East Sikkim, located near Gangtok and scenic landscapes.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.27,
+      "lon": 88.62
+    }
+  },
+  {
+    "id": "41",
+    "title": "Pelling",
+    "text": "A small town in West Sikkim, gateway to monasteries and natural attractions.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.29,
+      "lon": 88.12
+    }
+  },
+  {
+    "id": "42",
+    "title": "Rabdentse Ruins",
+    "text": "Historic ruins of the former capital of Sikkim, near Pelling.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.3,
+      "lon": 88.12
+    }
+  },
+  {
+    "id": "43",
+    "title": "Khangchendzonga National Park",
+    "text": "UNESCO World Heritage site in North Sikkim, known for biodiversity and trekking.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.7,
+      "lon": 88.5
+    }
+  },
+  {
+    "id": "44",
+    "title": "Lachung Monastery",
+    "text": "Monastery in Lachung village, known for spiritual significance and festivals.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.63,
+      "lon": 88.65
+    }
+  },
+  {
+    "id": "45",
+    "title": "Changey Monastery",
+    "text": "Buddhist monastery in North Sikkim, popular among trekkers and visitors.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.64,
+      "lon": 88.66
+    }
+  },
+  {
+    "id": "46",
+    "title": "Temi Tea Garden",
+    "text": "The only tea estate in Sikkim, offering scenic views and tea tours.",
+    "category": "nature",
+    "coordinates": {
+      "lat": 27.05,
+      "lon": 88.24
+    }
+  },
+  {
+    "id": "47",
+    "title": "Barsey Rhododendron Sanctuary Trek",
+    "text": "Popular trekking route during rhododendron bloom in spring.",
+    "category": "adventure",
+    "coordinates": {
+      "lat": 27.08,
+      "lon": 88.39
+    }
+  },
+  {
+    "id": "48",
+    "title": "Sikkim Himalayan Haat",
+    "text": "Local market in Gangtok showcasing handicrafts and regional produce.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.33,
+      "lon": 88.61
+    }
+  },
+  {
+    "id": "49",
+    "title": "Lingzya View Point",
+    "text": "A viewpoint near Pelling offering scenic views of mountains and valleys.",
+    "category": "viewpoint",
+    "coordinates": {
+      "lat": 27.28,
+      "lon": 88.13
+    }
+  },
+  {
+    "id": "50",
+    "title": "Martam Monastery",
+    "text": "Buddhist monastery in South Sikkim known for peaceful surroundings.",
+    "category": "culture",
+    "coordinates": {
+      "lat": 27.16,
+      "lon": 88.45
+    }
+  }
+]

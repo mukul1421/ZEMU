@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Zemu AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Inter;
+background:#0B1C2C;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 60px;
+
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(12px);
+
+position:fixed;
+width:100%;
+z-index:10;
+
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+font-size:20px;
+}
+
+.logo img{
+height:40px;
+}
+
+.nav-links{
+display:flex;
+gap:35px;
+}
+
+.navBtn{
+
+background:#0BA5A4;
+border:none;
+
+padding:10px 20px;
+
+border-radius:20px;
+
+cursor:pointer;
+
+color:white;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+background-image:url("/static/images/buddha.jpg");
+background-size:cover;
+background-position:center;
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(11,28,44,.7);
+
+}
+
+.hero-content{
+
+position:relative;
+max-width:700px;
+
+animation:fadeUp 1s ease;
+
+}
+
+.hero h1{
+
+font-size:56px;
+
+}
+
+.hero p{
+
+margin-top:10px;
+
+font-size:20px;
+
+color:#d1e7ff;
+
+}
+
+.cta{
+
+margin-top:40px;
+
+padding:16px 40px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:30px;
+
+background:#0BA5A4;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.cta:hover{
+
+transform:translateY(-4px);
+box-shadow:0 10px 40px rgba(0,0,0,.5);
+
+}
+
+
+/* FEATURES */
+
+.features{
+
+padding:100px 80px;
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+background:#0B1C2C;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:30px;
+
+border-radius:20px;
+
+width:260px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+
+}
+
+
+/* FOOTER */
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+color:#9dbbd7;
+
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="/static/images/logo.png">
+
+Zemu
+
+</div>
+
+<div class="nav-links">
+
+<div>How it Works</div>
+<div>Places</div>
+<div>Contact</div>
+
+<a href="/chat">
+
+<button class="navBtn">Try Zemu</button>
+
+</a>
+
+</div>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Explore Sikkim with AI</h1>
+
+<p>Your intelligent travel companion for discovering Sikkim.</p>
+
+<a href="/chat">
+
+<button class="cta">Start Chatting</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+<section class="features">
+
+<div class="card">
+
+<img src="/static/images/buddha.jpg">
+
+<h3>Discover Places</h3>
+
+<p>Find hidden gems and iconic attractions across Sikkim.</p>
+
+</div>
+
+<div class="card">
+
+<img src="/static/images/lake.jpg">
+
+<h3>Plan Your Trip</h3>
+
+<p>Get travel routes, weather updates and itinerary tips.</p>
+
+</div>
+
+<div class="card">
+
+<img src="/static/images/logo.png">
+
+<h3>AI Guide</h3>
+
+<p>Ask questions and get instant answers from Zemu AI.</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 Zemu AI
+
+</footer>
+
+</body>
+
+</html>
