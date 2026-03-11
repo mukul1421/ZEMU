@@ -79,8 +79,8 @@ zemu-ai-sikkim-chatbot
 
 ### 1. Clone the repository
 
-git clone https://github.com/yourusername/zemu-ai-sikkim-chatbot.git
-cd zemu-ai-sikkim-chatbot
+git clone https://github.com/mukul1421/ZEMU
+cd ZEMU
 
 ### 2. Install dependencies
 
@@ -129,7 +129,7 @@ You can ask the chatbot questions like:
 
 Mukul
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/mukul1421
 
 ---
 
